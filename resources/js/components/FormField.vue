@@ -113,6 +113,7 @@ export default {
         this.$emit('file-deleted')
         this.value = ''
         this.field.value = ''
+        this.field.previewUrl = null
         Nova.success(this.__('The file was deleted!'))
       } catch (error) {
         this.closeRemoveModal()
